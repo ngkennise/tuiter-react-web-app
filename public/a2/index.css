@@ -1,0 +1,33 @@
+/*using # to get the unique reference*/
+
+#list-tag {
+    color: white;
+    background-color: blue;
+}
+
+h2 {
+    color: red;
+    background: yellow;
+    font-size: 5em;
+}
+
+.fg-blue {
+    color: blue;
+    background-color: yellow;
+}
+
+/*this is explaining that there is a ul that has a child li*/
+ul > li {
+    background-color: green;
+    color: white;
+}
+
+p {
+    background-color: blue;
+    color: white;
+}
+
+
+
+
+
