@@ -484,7 +484,7 @@ and (max-width: 1200px) {
 }
 
 @media (min-width: 0px)
-and (max-width: 600px) {
+and (max-width: 1000px) {
     body {
         background-color: mistyrose;
     }
@@ -493,8 +493,8 @@ and (max-width: 600px) {
         color: saddlebrown;
     }
 }
-@media (min-width: 600px)
-and (max-width: 1200px) {
+@media (min-width: 700px)
+and (max-width: 2200px) {
     body {
         background-color: blue;
         color: white;
@@ -504,8 +504,8 @@ and (max-width: 1200px) {
         color: black;
     }
 }
-@media (min-width: 1200px)
-and (max-width: 1800px) {
+@media (min-width: 1500px)
+and (max-width: 3000px) {
     body {
         background-color: mediumseagreen;
         color: darkblue;
