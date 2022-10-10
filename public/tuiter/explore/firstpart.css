@@ -1,0 +1,107 @@
+body {
+    /*font-family: ".SF NS";*/
+    /*background-color: white;*/
+    /*color: white;*/
+}
+
+.wd-search-icon-tuiter {
+    bottom: 7px;
+    left: 12px;
+}
+
+.wd-nav-tabs {
+    color: rgb(29,161,242);
+    padding-left: 16px;
+}
+
+.wd-grey-wording-search-option {
+    color: rgb(110,118,125);
+    padding: 16px;
+    font-size: 15px;
+}
+
+/*.wd-border-radius {*/
+/*    border-radius: 50px;*/
+/*    width: 80%;*/
+/*}*/
+/*.wd-trending-hyperlinks {*/
+/*    color: rgb(110, 118, 125);*/
+/*    font-weight: 200;*/
+/*    font-size: 13px;*/
+/*    padding-bottom: 5px;*/
+/*    padding-top:5px;*/
+/*}*/
+
+/*.wd-grey-borders {*/
+/*    border-top: rgb(110, 118, 125);*/
+/*}*/
+
+/*.wd-tweet-count {*/
+/*    color: rgb(110, 118, 125);*/
+/*    font-weight: 200;*/
+/*    font-size: 13px;*/
+/*    padding-top:5px;*/
+/*}*/
+
+/*.wd-search-box {*/
+/*    background-color: darkgray;*/
+/*    color: white;*/
+/*    !*border-radius: 50px;*!*/
+/*    !*width: 800px;*!*/
+/*    padding: 12px;*/
+/*}*/
+
+/*.wd-search-box::placeholder {*/
+/*    color: white;*/
+/*}*/
+
+/*.wd-gear-button {*/
+/*    color: white;*/
+/*    padding: 12px;*/
+/*}*/
+
+.wd-nav-tabs li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.wd-nav-tabs .wd-selected {
+    border-bottom: solid 4px rgb(29,161,242);
+    border-radius: 2px;
+    padding-bottom: 15px;
+}
+
+/*.wd-float-right {*/
+/*    float: right;*/
+/*    height: 100px;*/
+/*    width: 100px;*/
+/*}*/
+
+/*.wd-picture-measures {*/
+/*    border-radius: 30px;*/
+/*    !*padding-right: 16px;*!*/
+/*}*/
+
+/*.wd-border-padding-top {*/
+/*    border: 1px solid rgb(110, 118, 125);*/
+/*    padding-top: 10px;*/
+/*    padding-left: 16px;*/
+/*    padding-bottom: 10px;*/
+/*}*/
+
+/*.wd-border-rectangle {*/
+/*    border: 1px solid rgb(110, 118, 125);*/
+/*    padding: 16px;*/
+/*}*/
+
+/*.wd-border-tweet-information {*/
+/*    border: 1px solid rgb(110, 118, 125);*/
+/*    padding-top: 10px;*/
+/*    padding-left: 16px;*/
+/*    padding-right: 16px;*/
+/*    padding-bottom: 60px;*/
+/*    height: 50px;*/
+
+/*}*/
+
+

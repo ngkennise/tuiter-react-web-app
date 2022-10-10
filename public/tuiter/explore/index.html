@@ -3,92 +3,358 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
     <link href="index.css" rel="stylesheet"/>
 </head>
 <body>
-<div class="wd-border-padding-top">
-    &#x1F50D;
-    <input class="wd-search-box wd-border-radius" placeholder="Search Tuiter"/>
-    <a href="explore-settings.html" style="text-decoration: none;" class="wd-gear-button">
-        &#x2699;
-    </a>
 
-    <ul class="wd-nav-tabs">
-        <li class="wd-selected">For you</li>
-        <li class="wd-grey-wording-search-option">Trending</li>
-        <li class="wd-grey-wording-search-option">COVID-19</li>
-        <li class="wd-grey-wording-search-option">News</li>
-        <li class="wd-grey-wording-search-option">Sports</li>
-        <li class="wd-grey-wording-search-option">Entertainment</li>
-    </ul>
-</div>
 
-<br>
-<div class="wd-border-rectangle">
-    <div class="wd-trending-hyperlinks">Trending in Science</div>
-    <div>Starship</div>
-    <div class="wd-tweet-count">55.5K views</div>
-    <br><br/>
-    <div class="wd-trending-hyperlinks">Sports · Trending</div>
-    <div>Joe Rogan</div>
-    <div class="wd-tweet-count">5,218 Tweets</div>
-</div>
+<!-- - how to create borders that fits to the picture and the top-->
+<!-- - how to do responsive grids-->
 
-<div class="wd-border-tweet-information">
-    <img class="wd-float-right wd-picture-measures"
-         src="cnn.jpeg"/>
+<div class="bg-black text-white wd-font">
+    <div class="container pt-3">
+        <div class="row">
+            <div class="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-2 col-xxl-2">
+                <div class="list-group">
+                    <div>
+                        <a href=""
+                           class="list-group-item list-group-item-action bg-black text-white mt-1">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                    <a href="../home.html"
+                       class="list-group-item list-group-item-action bg-black text-white mt-1 fw-light">
+                        <div>
+                            <span><i class="fas fa-home"></i></span>
+                            <span class="d-none d-xl-inline">Home</span>
+                        </div>
+                    </a>
 
-    <div>
-        The New York Times
-        <span
-                class="wd-trending-hyperlinks"> · Yesterday
-                </span>
+                    <a href="index.html"
+                       class="list-group-item list-group-item-action bg-black text-white mt-1 fw-bold">
+                        <i class="fas fa-hashtag"></i>
+                        <span class="d-none d-xl-inline">Explore</span>
+                    </a>
+                    <a href=""
+                       class="list-group-item list-group-item-action form-control bg-black text-white mt-1 fw-light">
+                        <i class="fas fa-bell"></i>
+                        <span class="d-none d-xl-inline">Notifications</span>
+                    </a>
+                    <a href="../messages.html"
+                       class="list-group-item list-group-item-action bg-black text-white mt-1 fw-light">
+                        <i class="fas fa-envelope"></i>
+                        <span class="d-none d-xl-inline">Messages</span>
+                    </a>
+                    <a href="../bookmarks/index.html"
+                       class="list-group-item list-group-item-action bg-black text-white mt-1 fw-light">
+                        <i class="fas fa-bookmark"></i>
+                        <span class="d-none d-xl-inline">Bookmarks</span>
+                    </a>
+                    <a href=""
+                       class="list-group-item list-group-item-action bg-black text-white mt-1 fw-light">
+                        <i class="fas fa-th-list"></i>
+                        <span class="d-none d-xl-inline">Lists</span>
+                    </a>
+                    <a href="../profile.html"
+                       class="list-group-item list-group-item-action bg-black text-white mt-1 fw-light">
+                        <i class="fas fa-user"></i>
+                        <span class="d-none d-xl-inline">Profile</span>
+                    </a>
+                    <a href=""
+                       class="list-group-item list-group-item-action bg-black text-white mt-1 fw-light">
+                        <i class="fas fa-stop-circle"></i>
+                        <span class="d-none d-xl-inline">More</span>
+                    </a>
+                </div>
+                <button type="button" class="btn btn-primary w-100 mt-2 rounded-pill flex-wrap col-12">Tuit</button>
+            </div>
+
+
+            <div class="col-10 col-sm-10 col-md-10 col-lg-7 col-xl-6 col-xxl-6">
+                <div class="border border-top-0 border-bottom-0 border-secondary">
+                    <div class="row">
+                        <div class="col-11">
+                            <div class="position-relative">
+                                <input class="ps-5 form-control rounded-pill ms-3 bg-dark border-0 wd-accounts"
+                                       placeholder="Search Tuiter"/>
+                                <div>
+                            <span class="position-absolute wd-search-icon-tuiter">
+                                        <i class="fas fa-search"></i>
+                            </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1 mt-1 float-start">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                    </div>
+
+                    <ul class="wd-nav-tabs nav-tabs border-secondary ps-1 text-wrap flex-wrap">
+                        <li class="nav-item wd-grey-wording-search-option wd-accounts"><a class="nav-link" href="for-you.html"> For you</a></li>
+                        <li class="wd-grey-wording-search-option wd-accounts"><a class="nav-link" href="trending.html">Trending</a></li>
+                        <li class="wd-grey-wording-search-option wd-accounts"><a class="nav-link" href="entertainment.html">COVID-19</a></li>
+                        <li class="wd-grey-wording-search-option wd-accounts "><a class="nav-link" href="news.html">News</a></li>
+                        <div class ="d-none d-sm-inline">
+                        <li class="wd-grey-wording-search-option wd-accounts"><a class="nav-link" href="sports.html">Sports</a></li>
+                        </div>
+                        <div class ="d-none d-md-inline">
+                        <li class="wd-selected rounded wd-accounts "><a class="nav-link2" href="entertainment.html">Entertainment</a></li>
+                        </div>
+                    </ul>
+                </div>
+
+                <div class="position-relative border border-top-0 border-secondary">
+                    <img src="../../images/myuniverse.webp" width="100%">
+                    <div class="position-absolute text-white wd-picture-wording text-wrap wd-categories-news text-wrap">
+<!--                        Music · Last Night-->
+                    </div>
+                    <b class="position-absolute text-white wd-picture-wording-headline text-wrap">
+                        BTS and Coldplay release their new song, My Universe
+                    </b>
+                </div>
+
+                <div class="border border-top-0 border-bottom-0 border-secondary">
+                    <!--                    <ul class="list-group">-->
+                    <div class="list-group-item bg-black text-white">
+                        <div class="row">
+                            <div class="col-10">
+                                <div class="fw-lighter text-secondary wd-categories-news">
+                                    Trending in R&B & Soul
+                                </div>
+                                <div class="fw-bolder wd-categories-news">
+                                    R Kelly
+                                    <!--                                        <i class="fas fa-check-circle"></i>-->
+                                </div>
+                                <div class="fw-lighter text-secondary wd-categories-news mb-1">
+                                    18.2K Tweets
+                                </div>
+                            </div>
+                            <b class="col-2 mt-2">
+                                ···
+                            </b>
+                        </div>
+                    </div>
+                    <!--                    <ul class="list-group">-->
+                    <div class="list-group-item bg-black text-white">
+                        <div class="row">
+                            <div class="col-10">
+                                <div class="fw-lighter text-secondary wd-categories-news ">
+                                    Trending in R&B & Soul
+                                </div>
+                                <div class="fw-bolder wd-categories-news">
+                                    Chloe
+                                </div>
+                                <div class="fw-lighter text-secondary wd-categories-news mb-1">
+                                    Trending with
+                                    <span class="text-primary">Halle</span>
+                                </div>
+                            </div>
+                            <b class="col-2 mt-2">
+                                ···
+                            </b>
+                        </div>
+                    </div>
+
+                    <div class="list-group-item bg-black text-white">
+                        <div class="row">
+                            <div class="col-10">
+                                <div class="fw-bolder wd-categories-news">
+                                    <span>&#x01AC;</span>
+                                    <span>The Times</span>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="fw-lighter text-secondary wd-categories-news">
+                                        · February 19, 2022
+                                    </span>
+                                    <div class="bolder text-white wd-categories-news text-wrap">
+                                        Stanley Tucci: 'Food or sex? That's the cruellest
+                                        question...'
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <img class="rounded" width="100%"
+                                     src="../../images/stanley.jpeg"/>
+                            </div>
+                        </div>
+                    </div>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-4 d-none d-lg-block col-lg-4 col-xl-4 col-xxl-4">
+                <div>
+                    <ul class="list-group">
+                        <li class="list-group-item border-0 bg-dark text-white">
+                            <div class="fw-bolder">
+                                Who to follow
+                            </div>
+                        </li>
+                        <li class="list-group-item border-0 bg-dark text-white">
+                            <div class="row">
+                                <div class="col-2">
+                                    <img class="float-start rounded-circle"
+                                         src="../../images/babylon.png" width="50px">
+                                </div>
+
+                                <div class="col-7 ps-3">
+                                    <div class="fw-bolder wd-accounts">
+                                        The Babylon Bee
+                                        <i class="fas fa-check-circle"></i>
+                                    </div>
+                                    <div class="text-secondary wd-accounts">
+                                        @TheBabylonBee
+                                    </div>
+                                </div>
+
+                                <div class="col-3">
+                                    <button type="button"
+                                            class="btn btn-light mt-2 float-end rounded-pill text-black wd-accounts">
+                                        <b>Follow</b>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="list-group-item border-0 bg-dark text-white">
+                            <div class="row">
+                                <div class="col-2">
+                                    <img class="rounded-circle"
+                                         src="../../images/jack.jpeg"
+                                         width="50px">
+                                </div>
+
+                                <div class="col-7 ps-3">
+                                    <div class="fw-bolder wd-accounts">
+                                        Jack Posobiec
+                                        <i class="fas fa-flag-usa"></i>
+                                        <i class="fas fa-check-circle"></i>
+                                    </div>
+                                    <div class="text-secondary wd-accounts">
+                                        @JackPosobiec
+                                    </div>
+                                </div>
+
+                                <div class="col-3">
+                                    <button type="button"
+                                            class="btn btn-light mt-2 float-end rounded-pill text-black wd-accounts ">
+                                        <b>Follow</b>
+                                    </button>
+                                </div>
+
+                                <div class="text-primary mt-3 wd-accounts">Show More</div>
+                            </div>
+
+
+                        </li>
+
+                        </li>
+
+                        <div class="pt-3">
+                             <div class="fw-lighter text-secondary wd-categories-news">
+                                 <span class="wd-termsconditions">Terms of Service</span>
+                                 <span class="wd-termsconditions">Privacy Policy</span>
+                                 <span class="wd-termsconditions">Cookie Policy</span>
+                             </div>
+                        </div>
+                        <div>
+                            <div class="fw-lighter text-secondary wd-categories-news">
+                                <span class="wd-termsconditions">Ads info</span>
+                                <span class="wd-termsconditions">More ··· </span>
+                                <span class="wd-termsconditions"><i class="far fa-copyright"></i> 2021 Twitter Inc.</span>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
-    <div>CNN's Cuomo Conundrum: A star anchor with a brother in trouble</div>
+
+
+    <!--    &#x1F50D;-->
+    <!--    <input class="wd-search-box wd-border-radius" placeholder="Search Tuiter"/>-->
+    <!--    <a href="explore-settings.html" style="text-decoration: none;" class="wd-gear-button">-->
+    <!--        &#x2699;-->
+    <!--    </a>-->
+
+    <!--    <ul class="wd-nav-tabs">-->
+    <!--        <li class="wd-selected">For you</li>-->
+    <!--        <li class="wd-grey-wording-search-option">Trending</li>-->
+    <!--        <li class="wd-grey-wording-search-option">COVID-19</li>-->
+    <!--        <li class="wd-grey-wording-search-option">News</li>-->
+    <!--        <li class="wd-grey-wording-search-option">Sports</li>-->
+    <!--        <li class="wd-grey-wording-search-option">Entertainment</li>-->
+    <!--    </ul>-->
+
+
+    <!--<br>-->
+    <!--<div class="wd-border-rectangle">-->
+    <!--    <div class="wd-trending-hyperlinks">Trending in Science</div>-->
+    <!--    <div>Starship</div>-->
+    <!--    <div class="wd-tweet-count">55.5K views</div>-->
+    <!--    <br><br/>-->
+    <!--    <div class="wd-trending-hyperlinks">Sports · Trending</div>-->
+    <!--    <div>Joe Rogan</div>-->
+    <!--    <div class="wd-tweet-count">5,218 Tweets</div>-->
+    <!--</div>-->
+
+    <!--<div class="wd-border-tweet-information">-->
+    <!--    <img class="wd-float-right wd-picture-measures"-->
+    <!--         src="cnn.jpeg"/>-->
+
+    <!--    <div>-->
+    <!--        The New York Times-->
+    <!--        <span-->
+    <!--                class="wd-trending-hyperlinks"> · Yesterday-->
+    <!--                </span>-->
+    <!--    </div>-->
+    <!--    <div>CNN's Cuomo Conundrum: A star anchor with a brother in trouble</div>-->
+    <!--</div>-->
+
+    <!--<div class="wd-border-tweet-information">-->
+    <!--    <img class="wd-float-right wd-picture-measures"-->
+    <!--         src="MA.jpeg"/>-->
+
+    <!--    <div class="wd-trending-hyperlinks">Covid-19 · LIVE</div>-->
+    <!--    <div>COVID-19:News and updates for Massachusetts</div>-->
+    <!--</div>-->
+
+    <!--<div class="wd-border-tweet-information">-->
+    <!--    <img class="wd-float-right wd-picture-measures"-->
+    <!--         src="booster.png"/>-->
+    <!--    <div>-->
+    <!--        Bloomberg Opinion-->
+    <!--        <span-->
+    <!--                class="wd-trending-hyperlinks"> · Yesterday-->
+    <!--                </span>-->
+    <!--    </div>-->
+    <!--    <div>Thinking about getting a booster? Read this first.</div>-->
+    <!--</div>-->
+
+    <!--<div class="wd-border-tweet-information">-->
+    <!--    <div class="wd-trending-hyperlinks">Trending in United States</div>-->
+    <!--    <div>Wonder Bread</div>-->
+    <!--    <div class="wd-trending-hyperlinks">1,259 Tweets</div>-->
+    <!--</div>-->
+
+    <!--<div class="wd-border-tweet-information">-->
+    <!--    <img class="wd-float-right wd-picture-measures"-->
+    <!--         src="fashion.jpeg"/>-->
+    <!--    <div class="wd-trending-hyperlinks">FASHION</div>-->
+    <!--    <div>-->
+    <!--        Gucci, Max Mara, Brunello Cucinelli Take on a Winter Trend: Balaclavas-->
+    <!--    </div>-->
+    <!--</div>-->
+
+    <!--<div class="wd-border-tweet-information">-->
+    <!--    <div class="wd-trending-hyperlinks">HEALTH & WELLNESS</div>-->
+    <!--        <div>Starting School Before 8 a.m. Can Be Harmful to Teens, Sleep Scientists Say</div>-->
+    <!--            <div class="wd-trending-hyperlinks">One possible way to help teenagers facing rising mental-->
+    <!--        health issues: start school later-->
+    <!--            </div>-->
+    <!--</div>-->
 </div>
-
-<div class="wd-border-tweet-information">
-    <img class="wd-float-right wd-picture-measures"
-         src="MA.jpeg"/>
-
-    <div class="wd-trending-hyperlinks">Covid-19 · LIVE</div>
-    <div>COVID-19:News and updates for Massachusetts</div>
-</div>
-
-<div class="wd-border-tweet-information">
-    <img class="wd-float-right wd-picture-measures"
-         src="booster.png"/>
-    <div>
-        Bloomberg Opinion
-        <span
-                class="wd-trending-hyperlinks"> · Yesterday
-                </span>
-    </div>
-    <div>Thinking about getting a booster? Read this first.</div>
-</div>
-
-<div class="wd-border-tweet-information">
-    <div class="wd-trending-hyperlinks">Trending in United States</div>
-    <div>Wonder Bread</div>
-    <div class="wd-trending-hyperlinks">1,259 Tweets</div>
-</div>
-
-<div class="wd-border-tweet-information">
-    <img class="wd-float-right wd-picture-measures"
-         src="fashion.jpeg"/>
-    <div class="wd-trending-hyperlinks">FASHION</div>
-    <div>
-        Gucci, Max Mara, Brunello Cucinelli Take on a Winter Trend: Balaclavas
-    </div>
-</div>
-
-<div class="wd-border-tweet-information">
-    <div class="wd-trending-hyperlinks">HEALTH & WELLNESS</div>
-    <div>Starting School Before 8 a.m. Can Be Harmful to Teens, Sleep Scientists Say</div>
-    <div class="wd-trending-hyperlinks">One possible way to help teenagers facing rising mental
-        health issues: start school later
-    </div>
-</div>
-
 </body>
 </html>
