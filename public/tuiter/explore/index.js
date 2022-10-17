@@ -1,79 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../../vendors/bootstrap/bootswatch/bootstrap.min.css">
-    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
-    <link href="index.css" rel="stylesheet"/>
-    <script src="../../vendors/jquery/jquery-3.6.0.min.js"></script>
-<!--    <script src="../NavigationSidebar/index.js"></script>-->
-<!--    <script src="main-content.js"></script>-->
-    <title>ExploreScreen</title>
+/* eslint-env jquery */
 
-</head>
-<body>
+import NavigationSidebar from "../NavigationSidebar/index.js";
+import WhoToFollowList from "../WhoToFollowList/WhoToFollowList.js";
+import ExploreComponent from "./ExploreComponent.js";
 
-<div class="container" id="wd-explore"></div>
-<script src="index.js" type="module"></script>
-
+function exploreComponent() {
+    $('#wd-explore').append(`
+<!--       <h2>Explore</h2>-->
+  <div class="row mt-3">
+   <div class="col-2 col-md-2 col-lg-1 col-xl-2">
+<!--   <h3>Navigation Sidebar</h3>-->
+    ${NavigationSidebar()}
+   </div>
+   <div class="col-10 col-lg-7 col-xl-6 bg-black text-white">
+<!--    <h3>ExploreComponent</h3>-->
+    ${ExploreComponent()}
+   </div>
+   <div class="d-none d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4 text-white rounded">
+<!--    <h3>WhoToFollowList </h3>-->
+    ${WhoToFollowList()}
+   </div>
+  </div>
 
 <!--<div class="bg-black text-white wd-font">-->
 <!--    <div class="container pt-3">-->
 <!--        <div class="row">-->
 <!--            <div class="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-2 col-xxl-2">-->
-<!--                <div class="list-group">-->
-<!--                    <div>-->
-<!--                        <a href=""-->
-<!--                           class="list-group-item list-group-item-action bg-dark text-white mt-1">-->
-<!--                            <i class="fab fa-twitter"></i>-->
-<!--                        </a>-->
-<!--                    </div>-->
-<!--                    <a href="../home.html"-->
-<!--                       class="list-group-item list-group-item-action bg-dark text-white fw-light">-->
-<!--                        <div>-->
-<!--                            <span><i class="fas fa-home"></i></span>-->
-<!--                            <span class="d-none d-xl-inline">Home</span>-->
-<!--                        </div>-->
-<!--                    </a>-->
-
-<!--                    <a href="example.html"-->
-<!--                       class="list-group-item list-group-item-action bg-dark text-white fw-bold">-->
-<!--                        <i class="fas fa-hashtag"></i>-->
-<!--                        <span class="d-none d-xl-inline">Explore</span>-->
-<!--                    </a>-->
-<!--                    <a href=""-->
-<!--                       class="list-group-item list-group-item-action bg-dark text-white fw-light">-->
-<!--                        <i class="fas fa-bell"></i>-->
-<!--                        <span class="d-none d-xl-inline">Notifications</span>-->
-<!--                    </a>-->
-<!--                    <a href="../messages.html"-->
-<!--                       class="list-group-item list-group-item-action bg-dark text-white fw-light">-->
-<!--                        <i class="fas fa-envelope"></i>-->
-<!--                        <span class="d-none d-xl-inline">Messages</span>-->
-<!--                    </a>-->
-<!--                    <a href="../bookmarks/index.html"-->
-<!--                       class="list-group-item list-group-item-action bg-dark text-white fw-light">-->
-<!--                        <i class="fas fa-bookmark"></i>-->
-<!--                        <span class="d-none d-xl-inline">Bookmarks</span>-->
-<!--                    </a>-->
-<!--                    <a href=""-->
-<!--                       class="list-group-item list-group-item-action bg-dark text-white fw-light">-->
-<!--                        <i class="fas fa-th-list"></i>-->
-<!--                        <span class="d-none d-xl-inline">Lists</span>-->
-<!--                    </a>-->
-<!--                    <a href="../profile.html"-->
-<!--                       class="list-group-item list-group-item-action bg-dark text-white fw-light">-->
-<!--                        <i class="fas fa-user"></i>-->
-<!--                        <span class="d-none d-xl-inline">Profile</span>-->
-<!--                    </a>-->
-<!--                    <a href=""-->
-<!--                       class="list-group-item list-group-item-action bg-dark text-white fw-light">-->
-<!--                        <i class="fas fa-stop-circle"></i>-->
-<!--                        <span class="d-none d-xl-inline">More</span>-->
-<!--                    </a>-->
-<!--                </div>-->
-<!--                <button type="button" class="btn btn-primary w-100 mt-2 rounded-pill flex-wrap col-12">Tuit</button>-->
 <!--            </div>-->
 
 <!--                <div class="col-10 col-sm-10 col-md-10 col-lg-7 col-xl-6 col-xxl-6">-->
@@ -344,94 +296,6 @@
 <!--            </div>-->
 <!--        </div>-->
 <!--    </div>-->
-
-
-
-
-
-    <!--    &#x1F50D;-->
-<!--    <input class="wd-search-box wd-border-radius" placeholder="Search Tuiter"/>-->
-<!--    <a href="explore-settings.html" style="text-decoration: none;" class="wd-gear-button">-->
-<!--        &#x2699;-->
-<!--    </a>-->
-
-<!--    <ul class="wd-nav-tabs">-->
-<!--        <li class="wd-selected">For you</li>-->
-<!--        <li class="wd-grey-wording-search-option">Trending</li>-->
-<!--        <li class="wd-grey-wording-search-option">COVID-19</li>-->
-<!--        <li class="wd-grey-wording-search-option">News</li>-->
-<!--        <li class="wd-grey-wording-search-option">Sports</li>-->
-<!--        <li class="wd-grey-wording-search-option">Entertainment</li>-->
-<!--    </ul>-->
-
-
-<!--<br>-->
-<!--<div class="wd-border-rectangle">-->
-<!--    <div class="wd-trending-hyperlinks">Trending in Science</div>-->
-<!--    <div>Starship</div>-->
-<!--    <div class="wd-tweet-count">55.5K views</div>-->
-<!--    <br><br/>-->
-<!--    <div class="wd-trending-hyperlinks">Sports · Trending</div>-->
-<!--    <div>Joe Rogan</div>-->
-<!--    <div class="wd-tweet-count">5,218 Tweets</div>-->
-<!--</div>-->
-
-<!--<div class="wd-border-tweet-information">-->
-<!--    <img class="wd-float-right wd-picture-measures"-->
-<!--         src="cnn.jpeg"/>-->
-
-<!--    <div>-->
-<!--        The New York Times-->
-<!--        <span-->
-<!--                class="wd-trending-hyperlinks"> · Yesterday-->
-<!--                </span>-->
-<!--    </div>-->
-<!--    <div>CNN's Cuomo Conundrum: A star anchor with a brother in trouble</div>-->
-<!--</div>-->
-
-<!--<div class="wd-border-tweet-information">-->
-<!--    <img class="wd-float-right wd-picture-measures"-->
-<!--         src="MA.jpeg"/>-->
-
-<!--    <div class="wd-trending-hyperlinks">Covid-19 · LIVE</div>-->
-<!--    <div>COVID-19:News and updates for Massachusetts</div>-->
-<!--</div>-->
-
-<!--<div class="wd-border-tweet-information">-->
-<!--    <img class="wd-float-right wd-picture-measures"-->
-<!--         src="booster.png"/>-->
-<!--    <div>-->
-<!--        Bloomberg Opinion-->
-<!--        <span-->
-<!--                class="wd-trending-hyperlinks"> · Yesterday-->
-<!--                </span>-->
-<!--    </div>-->
-<!--    <div>Thinking about getting a booster? Read this first.</div>-->
-<!--</div>-->
-
-<!--<div class="wd-border-tweet-information">-->
-<!--    <div class="wd-trending-hyperlinks">Trending in United States</div>-->
-<!--    <div>Wonder Bread</div>-->
-<!--    <div class="wd-trending-hyperlinks">1,259 Tweets</div>-->
-<!--</div>-->
-
-<!--<div class="wd-border-tweet-information">-->
-<!--    <img class="wd-float-right wd-picture-measures"-->
-<!--         src="fashion.jpeg"/>-->
-<!--    <div class="wd-trending-hyperlinks">FASHION</div>-->
-<!--    <div>-->
-<!--        Gucci, Max Mara, Brunello Cucinelli Take on a Winter Trend: Balaclavas-->
-<!--    </div>-->
-<!--</div>-->
-
-<!--<div class="wd-border-tweet-information">-->
-<!--    <div class="wd-trending-hyperlinks">HEALTH & WELLNESS</div>-->
-<!--        <div>Starting School Before 8 a.m. Can Be Harmful to Teens, Sleep Scientists Say</div>-->
-<!--            <div class="wd-trending-hyperlinks">One possible way to help teenagers facing rising mental-->
-<!--        health issues: start school later-->
-<!--            </div>-->
-<!--</div>-->
-<!--</div>-->
-
-</body>
-</html>
+    `)
+}
+$(exploreComponent)
