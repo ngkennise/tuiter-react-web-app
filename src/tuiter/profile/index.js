@@ -27,6 +27,14 @@ const ProfileComponent = () => {
                 </div>
 
                 <div>
+                    <img src={profile.profilePicture} className="rounded-circle border border-white" height="160px"/>
+                    <Link>
+                        <button type ="button" className="btn btn-primary rounded-pill float-end">Edit Button</button>
+                    </Link>
+
+                </div>
+
+                <div className="mt-4">
                     <h5 className="fw-bold text-black">{profile.firstName} {profile.lastName}</h5>
                     <h6 className="text-secondary fw-light mb-2">{profile.userName}</h6>
                     <h5 className="text-dark fw-light mb-2">{profile.bio}</h5>
@@ -46,25 +54,14 @@ const ProfileComponent = () => {
                         </span>
                     </div>
 
+                    <div>
+
+
+                    </div>
+
                 </div>
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         </>
-    )
-
-
+    );
 }
+export default ProfileComponent;

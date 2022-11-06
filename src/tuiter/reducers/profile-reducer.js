@@ -16,28 +16,22 @@ const initialProfile = {
     followersCount: 223
 }
 
-const profileSlice = createSlice( {
-    name: 'profile',
-    initialProfile : initialProfile,
-    reducers: {
+const profileSlice = createSlice({
+                                     name: 'profile',
+                                     initialState: initialProfile,
+                                     reducers: {
+                                         editProfile(state, action) {
+                                             const p = action.payload;
+                                             state.firstName = p.firstName;
+                                             state.lastName = p.lastName;
+                                             state.bio = p.bio;
+                                             state.location = p.location;
+                                             state.website = p.website;
+                                             state.dateOfBirth = p.dateOfBirth;
+                                             return state;
+                                         }
+                                     }
+                                 });
 
-
-
-
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-);
+export const {editProfile} = profileSlice.actions;
 export default profileSlice.reducer;
