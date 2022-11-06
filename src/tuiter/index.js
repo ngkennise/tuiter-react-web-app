@@ -17,7 +17,7 @@ const store = configureStore(
                     {
                         who: whoReducer,
                         tuits: tuitsReducer,
-                        profile: profileReducer;
+                        profile: profileReducer
                     }
             }
     );
