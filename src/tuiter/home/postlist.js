@@ -7,8 +7,7 @@ const PostTweetList = () => {
         <ul className="list-group">
             {
                 postsitemArray.map(post =>
-                                       <PostItem
-                                           key={post.id} post={post}/> )
+                                       <PostItem key={post.id} post={post}/> )
             }
         </ul>
     );
