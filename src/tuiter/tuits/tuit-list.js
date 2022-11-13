@@ -6,12 +6,16 @@ const TuitsList = () => {
     const tuitItemArray = useSelector(
         (state) => state.tuits)
          return(
+             <>
         <ul className="list-group">
             {
-                tuitItemArray.map(tuit =>
-                                       <TuitItem key={tuit.id} tuits={tuit}/> )
+                tuitItemArray.map(tuits =>
+                                       <TuitItem key={tuits._id}
+                                        tuits={tuits}/> )
+
             }
         </ul>
+             </>
     );
 };
 export default TuitsList;
