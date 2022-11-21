@@ -31,7 +31,7 @@ const TuitStats = (
                 }
 
                    className="bi bi-heart-fill text-danger"/>
-                <span className='ps-3'>
+                <span className='ps-2'>
                     {tuit.likes}
                 </span>
             </div>
