@@ -6,10 +6,11 @@ const createTuit = async (req, res) => {
     newTuit.dislikes = 0
     newTuit.replies = 0
     newTuit.retuits = 0
-    newTuit.liked = false
     newTuit.disliked = false
+    newTuit.liked = false
     const insertedTuit = await tuitDao
         .createTuit(newTuit)
+
     res.json(insertedTuit)
 }
 
