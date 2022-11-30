@@ -43,8 +43,8 @@ const TuitStats = (
                                                            }))
                 }
 
-                   className="bi bi-hand-thumbs-down-fill text-danger"/>
-                <span className='ps-3'>
+                   className="bi bi-hand-thumbs-down-fill text-black"/>
+                <span className='ps-2'>
                     {tuit.dislikes}
                 </span>
             </div>
