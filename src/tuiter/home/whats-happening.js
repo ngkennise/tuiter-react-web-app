@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-// import {createTuit} from "../reducers/tuits-reducer";
 import {createTuitThunk}
     from "../../services/tuits-thunks";
 
@@ -17,7 +16,7 @@ const WhatsHappening = () => {
     return (
         <div className="row">
             <div className="col-auto ">
-                <img src="/images/nasa.png" class = "rounded-circle" width={60}/>
+                <img src="/images/nasa.png" className = "rounded-circle" width={60}/>
             </div>
             <div className="col-10">
        <textarea value={whatsHappening} placeholder="What's happening?"

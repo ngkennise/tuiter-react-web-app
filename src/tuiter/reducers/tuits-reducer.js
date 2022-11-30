@@ -9,7 +9,7 @@ const initialState = {
 }
 
 const currentUser = {
-    "userName": "NASA",
+    "username": "NASA",
     "handle": "@nasa",
     "image": "nasa.png",
 };
@@ -22,6 +22,7 @@ const templateTuit = {
     "replies": 0,
     "retuits": 0,
     "likes": 0,
+    "dislikes": 0,
 }
 
 const tuitsSlice = createSlice({
@@ -75,6 +76,7 @@ const tuitsSlice = createSlice({
                                        createTuit(state, action) {
                                            state.unshift({
                                                              ...action.payload,
+                                               ...currentUser,
                                                              ...templateTuit,
                                                              _id: (new Date()).getTime(),
                                                          })
